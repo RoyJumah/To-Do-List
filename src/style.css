@@ -73,3 +73,9 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
