@@ -1,3 +1,51 @@
-.hello {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: "Rubik", sans-serif;
+}
+
+.todo-container {
+  width: 40rem;
+  margin: 9.6rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border: 1px solid rgba(199, 193, 193, 0.616);
+  padding: 2.4rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+input {
+  border: hidden;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* border-bottom: 0.5px solid #666; */
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(158, 155, 155);
+  font-style: italic;
+}
+
+.clear p {
+  text-align: center;
+  color: rgb(158, 155, 155);
+  font-size: 1.2rem;
+}
+
+hr {
+  color: rgb(158, 155, 155);
 }
