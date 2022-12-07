@@ -1,31 +1,31 @@
-import "./style.css";
+import './style.css';
 
 const todo = [
   {
-    description: "Eat",
+    description: 'Eat',
     completed: true,
     index: 1,
   },
   {
-    description: "Run",
+    description: 'Run',
     completed: true,
     index: 2,
   },
   {
-    description: "Sleep",
+    description: 'Sleep',
     completed: true,
     index: 3,
   },
 ];
-const form = document.getElementById("form");
-const container = document.querySelector(".container");
+const form = document.getElementById('form');
+const container = document.querySelector('.container');
 
 const displayToDoList = () => {};
 const sortedTodo = todo.sort((prev, next) => prev.index - next.index);
 
 sortedTodo.forEach(({ description }) => {
-  const listItem = document.createElement("div");
-  listItem.className = "row";
+  const listItem = document.createElement('div');
+  listItem.className = 'row';
   listItem.innerHTML = `
   <div class ="list">
   <div class ="list-item">
@@ -52,4 +52,4 @@ sortedTodo.forEach(({ description }) => {
   form.appendChild(listItem);
 });
 
-container.addEventListener("load", displayToDoList);
+container.addEventListener('load', displayToDoList);

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-weight: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .todo-container {
@@ -42,7 +42,9 @@ input::-webkit-input-placeholder {
 .clear p {
   text-align: center;
   color: rgb(158, 155, 155);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  border-top: 0.5px solid rgb(214, 207, 207);
+  padding: 2.4rem;
 }
 
 hr {
@@ -57,6 +59,7 @@ hr {
 .icon {
   width: 1.4rem;
   height: 1.4rem;
+  fill: rgb(199, 188, 188);
 }
 
 .add-list {
@@ -72,6 +75,8 @@ hr {
 .list {
   display: flex;
   justify-content: space-between;
+  border-top: 0.6px solid rgb(190, 186, 186);
+  padding: 0.6rem;
 }
 
 .list-item {
