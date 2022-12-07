@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.todo-container {
+  width: 40rem;
+  margin: 9.6rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  border: 1px solid rgba(199, 193, 193, 0.616);
+  padding: 2.4rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+input {
+  border: hidden;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(158, 155, 155);
+  font-style: italic;
+}
+
+.clear p {
+  text-align: center;
+  color: rgb(158, 155, 155);
+  font-size: 1.4rem;
+  border-top: 0.5px solid rgb(214, 207, 207);
+  padding: 2.4rem;
+}
+
+hr {
+  color: rgb(158, 155, 155);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: rgb(199, 188, 188);
+}
+
+.add-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+*:focus {
+  outline: none;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.6px solid rgb(190, 186, 186);
+  padding: 0.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
