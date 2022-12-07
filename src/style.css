@@ -32,7 +32,6 @@ input {
 h1 {
   font-size: 1.8rem;
   font-weight: 400;
-  /* border-bottom: 0.5px solid #666; */
 }
 
 input::-webkit-input-placeholder {
@@ -48,4 +47,29 @@ input::-webkit-input-placeholder {
 
 hr {
   color: rgb(158, 155, 155);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.add-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+*:focus {
+  outline: none;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
 }
