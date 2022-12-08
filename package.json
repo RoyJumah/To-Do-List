@@ -37,6 +37,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "lodash": "^4.17.21"
   },
   "main": "webpack.config.js"
