@@ -81,3 +81,4 @@ const updateTodos = el => {
     Store.updateTodos(todos);
   });
 };
+export { Store, displayTodo, createTodo, updateTodos };
