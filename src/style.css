@@ -92,9 +92,11 @@ button {
   border: none;
   background: transparent;
 }
+
 .display-none {
   display: none;
 }
+
 .test {
   border: solid red 1px;
 }
