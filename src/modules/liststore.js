@@ -1,3 +1,30 @@
+class Store {
+  // get todo items from local storage
+  static getTodos = () => JSON.parse(localStorage.getItem('todos')) || [];
+  // add todo item to local storage
+
+  static addTodo = todo => {
+    const todos = this.getTodos();
+    todos.push(todo);
+    localStorage.setItem('todos', JSON.stringify(todos));
+  };
+  // update todos
+  static updateTodos = todos => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  };
+  // remove todo item from local storage
+  static deleteTodo = ind => {
+    const todos = this.getTodos();
+    const newTodos = todos.filter(todo => todo.index !== ind);
+    let indexedTodo = [];
+    newTodos.forEach((todo, todoIndex) => {
+      todo.index = todoIndex;
+      indexedTodo = [...indexedTodo, todo];
+    });
+    localStorage.setItem('todos', JSON.stringify(indexedTodo));
+  };
+}
+
 const listContainer = document.querySelector('.list-container');
 const displayTodo = () => {
   listContainer.innerHTML = '';
