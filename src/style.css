@@ -78,17 +78,14 @@ hr {
   justify-content: space-between;
   border-top: 0.6px solid rgb(190, 186, 186);
   padding: 0.6rem;
+  gap: 10rem;
 }
 
 .list-item {
   display: flex;
   align-items: center;
   gap: 2rem;
-}
-
-.todos li.completed {
-  color: #b6b6b6;
-  text-decoration: line-through;
+  justify-content: space-between;
 }
 
 button {
