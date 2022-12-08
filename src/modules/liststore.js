@@ -66,7 +66,7 @@ const createTodo = () => {
   const todo = {
     description: `${description}`,
     completed: false,
-    index: `${Store.getTodos().length}`,
+    index: `${Store.getTodos().length + 1}`,
   };
   // add new todo to local storage
   Store.addTodo(todo);
