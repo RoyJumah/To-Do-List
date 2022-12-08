@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .todo-container {
@@ -56,9 +56,10 @@ hr {
   justify-content: space-between;
 }
 
-.icon {
-  width: 1.4rem;
-  height: 1.4rem;
+.icon,
+.icon-enter {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
   fill: rgb(199, 188, 188);
 }
 
@@ -83,4 +84,26 @@ hr {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+.display-none {
+  display: none;
+}
+.test {
+  border: solid red 1px;
+}
+
+.fa-trash-can {
+  color: #b6b6b8;
+  opacity: 0.7;
+  cursor: pointer;
 }
