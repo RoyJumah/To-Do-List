@@ -20,7 +20,7 @@ class Store {
     const newTodos = todos.filter((todo) => todo.index !== ind);
     let indexedTodo = [];
     newTodos.forEach((todo, todoIndex) => {
-      todo.index = todoIndex;
+      todo.index = todoIndex + 1;
       indexedTodo = [...indexedTodo, todo];
     });
     localStorage.setItem('todos', JSON.stringify(indexedTodo));
