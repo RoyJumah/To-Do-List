@@ -87,7 +87,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://royjumah.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
