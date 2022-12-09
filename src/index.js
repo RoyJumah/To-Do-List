@@ -40,6 +40,7 @@ listContainer.addEventListener('click', e => {
 
   updateTodos(clicked);
 });
+
 listContainer.addEventListener('click', e => {
   const clicked = e.target.closest('.check-box');
   if (!clicked) return;
