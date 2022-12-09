@@ -1,24 +1,25 @@
 class Store {
   // get todo items from local storage
   static getTodos = () => JSON.parse(localStorage.getItem('todos')) || [];
+
   // add todo item to local storage
-  static addTodo = todo => {
+  static addTodo = (todo) => {
     const todos = this.getTodos();
     todos.push(todo);
 
     localStorage.setItem('todos', JSON.stringify(todos));
   };
 
-  //update todos
+  // update todos
 
-  static updateTodos = todos => {
+  static updateTodos = (todos) => {
     localStorage.setItem('todos', JSON.stringify(todos));
   };
 
   // remove todo item from local storage
-  static deleteTodo = ind => {
+  static deleteTodo = (ind) => {
     const todos = this.getTodos();
-    const newTodos = todos.filter(todo => todo.index !== ind);
+    const newTodos = todos.filter((todo) => todo.index !== ind);
     let indexedTodo = [];
     newTodos.forEach((todo, todoIndex) => {
       todo.index = todoIndex;
@@ -79,14 +80,16 @@ const createTodo = () => {
   displayTodo();
 };
 
-const updateTodos = el => {
+const updateTodos = (el) => {
   el.addEventListener('keyup', () => {
     const todos = Store.getTodos();
     const todoNum = el.dataset.todo;
-    const todo = todos.find(todo => todo.index === todoNum);
+    const todo = todos.find((todo) => todo.index === todoNum);
     todo.description = el.value.trim();
 
     Store.updateTodos(todos);
   });
 };
-export { Store, displayTodo, createTodo, updateTodos };
+export {
+  Store, displayTodo, createTodo, updateTodos,
+};

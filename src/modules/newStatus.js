@@ -1,10 +1,9 @@
-import { displayTodo } from './liststore.js';
-import { Store } from './liststore.js';
+import { displayTodo, Store } from './liststore.js';
 
-const updateStatus = clicked => {
+const updateStatus = (clicked) => {
   const todos = Store.getTodos();
   let todosStatus = [];
-  todos.forEach(todo => {
+  todos.forEach((todo) => {
     if (todo.index === clicked.dataset.ind) {
       todo.completed = !todo.completed;
       todosStatus = [...todosStatus, todo];
@@ -17,7 +16,7 @@ const updateStatus = clicked => {
 
 const clearCompleted = () => {
   const todos = Store.getTodos();
-  const newTodos = todos.filter(todo => todo.completed === false);
+  const newTodos = todos.filter((todo) => todo.completed === false);
 
   Store.updateTodos(newTodos);
   displayTodo();
