@@ -15,14 +15,15 @@ body {
 }
 
 .todo-container {
-  width: 40rem;
+  width: 75rem;
   margin: 9.6rem auto;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
   border: 1px solid rgba(199, 193, 193, 0.616);
   padding: 2.4rem;
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 input {
@@ -105,4 +106,51 @@ button {
   color: #b6b6b8;
   opacity: 0.7;
   cursor: pointer;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.fa-trash-can:hover {
+  color: orangered;
+}
+
+.icon-check {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #b6b6b8;
+  border-radius: 2px;
+  cursor: pointer;
+  display: none;
+}
+
+.delete {
+  display: none;
+  z-index: 5;
+}
+
+.list-item:focus-within .delete {
+  display: inline;
+}
+
+.check-box {
+  z-index: 5;
+  cursor: pointer;
+}
+
+.fa-check {
+  color: #2e8ae6;
+  display: none;
+}
+
+.icon-check[data-completed='false'] {
+  display: block;
+}
+
+.fa-check[data-completed='true'] {
+  display: block;
+}
+
+.todo-item[data-completed='true'] {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
